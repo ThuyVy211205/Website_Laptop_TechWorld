@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech World - Cửa hàng công nghệ uy tín</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="images/logo-th.jpg" alt="Tech World Logo">
+                        <span>Tech World</span>
+                    </a>
+                </div>
+    <nav class="nav" id="nav">
+        <ul class="nav-list">
+            <li class="dropdown">
+            <a href="#">LapTop <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="category.html?cat=hp">Laptop HP</a></li>
+                    <li><a href="category.html?cat=dell">Laptop Dell</a></li>
+                    <li><a href="category.html?cat=lenovo">Laptop Lenovo</a></li>
+                    <li><a href="category.html?cat=macbook">MacBook</a></li>
+                </ul>
+            </li>
+                <li><a href="orders.html">Đơn hàng của bạn</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="#gioi-thieu">Giới thiệu</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search -->
+        <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm laptop..." id="searchInput">
+            <button class="search-btn" id="searchBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </button>
+        </div>
+                
+    <!-- Icons -->
+        <div class="header-icons">
+    <button class="icon-btn cart-btn" id="cartBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="badge" id="cartBadge">0</span>
+    </button>
+
+    <div id="auth-buttons" class="auth-header-wrapper">
+        <a href="login.html" class="icon-btn user-btn" id="userBtn" title="Đăng nhập">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+        </a>
+    </div>
+    <button class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+    </button>
+</div>
+        </div>
+    </div>
+</header>
+
+    <!-- ========== BANNER SECTION ========== -->
+    <section class="home-banner" aria-label="Banner chính">
+        <div class="container">
+            <div class="home-banner-slider" id="homeBannerSlider">
+                <img src="images/banner.jpg" alt="Banner Horse Store" class="home-banner-image active">
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== CATEGORIES ========== -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Mua theo danh mục</h2>
+            
+            <div class="category-grid">
+                <!-- Category Card 1 -->
+                <a class="category-card" href="category.html?cat=hp">
+                    <img src="images/HP Pavilion 15-eg3093TU 19.980.000.jpg" alt="hp">
+                    <h3>Laptop HP</h3>
+                    <span class="category-link">Xem ngay →</span>
+                </a>
+                
+                <!-- Category Card 2 -->
+                <a class="category-card" href="category.html?cat=dell">
+                    <img src="images/dell xps 13 9315 27tr.webp" alt="dell">
+                    <h3>Laptop Dell</h3>
+                    <span class="category-link">Xem ngay →</span>
+                </a>
+                
+                <!-- Category Card 3 -->
+                <a class="category-card" href="category.html?cat=lenovo">
+                    <img src="images/lenovo-think-pad-1.webp" alt="lenovo">
+                    <h3>Laptop Lenovo</h3>
+                    <span class="category-link">Xem ngay →</span>
+                </a>
+                
+                <!-- Category Card 4 -->
+                <a class="category-card" href="category.html?cat=macbook">
+                   <img src="images/apple-macbook-air-m2-2022   20.190.000.jpg" alt="macbook"> 
+                   <h3>Macbook</h3>
+                   <span class="category-link">Xem ngay →</span>
+                   
+                </a>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCTS ========== -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Sản phẩm nổi bật</h2>
+            <div class="product-grid" id="productGrid"></div>
+        </div>
+    </section>
+    <!-- ========== HERO ========== -->
+<section class="about-hero" id="gioi-thieu">
+    <div class="container">
+        <h1>Chào mừng bạn đến với Tech World</h1>
+        <p>Nơi mang đến sự chuyên nghiệp và đa dạng trong thế giới laptop!</p>
+    </div>
+</section>
+
+    <!-- ========== CONTENT ========== -->
+
+    <section class="history container">
+        <div class="history-content">
+            <h2>Hành trình từ năm 2004</h2>
+            <p>Là một trong những công ty tiên phong trong lĩnh vực phân phối máy tính xách tay tại thị trường Việt Nam. Với tâm huyết lấy chất lượng và sự trung thực làm thước đo để xây dựng thương hiệu, <span class="text-red">TechWorld.vn</span> ngày nay đã từng bước xây dựng niềm tin vững chắc trong lòng người tiêu dùng.</p>
+            <br>
+            <p>Chúng tôi chuyên nhập khẩu và phân phối laptop chính hãng, nhập khẩu trực tiếp từ <strong>Mỹ, Canada,...</strong></p>
+        </div>
+        <div class="history-image">
+            <img src="images/doingu.png" alt="Văn phòng làm việc LaptopVIP năm 2004">
+        </div>
+    </section>
+
+    <section class="brands">
+        <div class="container">
+            <h2>Các dòng sản phẩm cao cấp</h2>
+            <div class="brand-grid">
+                <div class="brand-item">HP ProBook</div>
+                <div class="brand-item">Dell Plus</div>
+                <div class="brand-item">Lenovo ThinkPad</div>
+                <div class="brand-item">Macbook Air M4</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services container">
+        <h2>Dịch vụ vượt trội</h2>
+        <div class="services-wrapper">
+            <div class="service-box">
+                <div class="service-icon">✈️</div>
+                <h3>Vận chuyển Quốc tế</h3>
+                <p>Nhận vận chuyển hàng hóa từ Mỹ về Việt Nam hoặc ngược lại một cách an toàn và nhanh chóng.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">🛒</div>
+                <h3>Đặt hàng trực tiếp</h3>
+                <p>Nhận đặt hàng tại Mỹ, Canada... mang đến cho khách hàng sản phẩm đúng chất lượng với giá cạnh tranh nhất.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="commitments">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">Tại sao chọn Tech World ?</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="service-icon">🥇</div>
+                    <h3>Địa chỉ hàng đầu</h3>
+                    <p>Tự hào là một trong những địa chỉ cung cấp sản phẩm và dịch vụ liên quan đến <span class="text-red">laptop</span> hàng đầu tại Việt Nam.</p>
+                </div>
+                <div class="card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Cam kết hài lòng</h3>
+                    <p>Không ngừng nâng cao chất lượng sản phẩm và dịch vụ để đáp ứng và mang lại sự hài lòng tối đa cho quý khách.</p>
+                </div>
+                <div class="card">
+                    <div class="service-icon">💻</div>
+                    <h3>Đa dạng sản phẩm</h3>
+                    <p>Từ laptop phổ thông đến gaming, từ máy siêu mỏng đến máy trạm chuyên nghiệp, đáp ứng mọi nhu cầu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="support">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1 -->
+                <div class="footer-col">
+                    <h3>Về chúng tôi</h3>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="footer-col">
+                    <h3>Hỗ trợ</h3>
+                    <ul>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Vận chuyển</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div class="footer-col">
+                    <h3>Liên hệ</h3>
+                    <ul>
+                        <li><a href="#">Hotline: 0966457974</a></li>
+                        <li><a href="#">Email: vyphan21222005@gmail.com</a></li>
+                        <li><a href="#">Địa chỉ: 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, Thành phố Hồ Chí Minh, Việt Nam</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div class="footer-col">
+                    <h3>Kết nối</h3>
+                    <p>Đăng ký nhận tin tức</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Email của bạn" required>
+                        <button type="submit">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <!-- ========== CART MODAL ========== -->
+    <div class="cart-modal hidden" id="cartModal">
+        <div class="cart-backdrop" id="cartBackdrop"></div>
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Giỏ hàng</h3>
+                <button class="cart-close" id="cartCloseBtn">&times;</button>
+            </div>
+            <div class="cart-body">
+                <div id="cartItems"></div>
+                <div class="cart-empty" id="cartEmpty">Giỏ hàng của bạn đang trống.</div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Tổng:</span>
+                    <span id="cartTotal">$0</span>
+                </div>
+                <button class="btn btn-primary" id="checkoutBtn">Thanh toán</button>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT -->
+            <div class="contact-fixed">
+                <button class="contact-btn" data-contact="zalo" style="background: none; border: none; cursor: pointer; padding: 0;"><img src="images/zalo.png" alt="Zalo"></button>
+                <button class="contact-btn" data-contact="messenger" style="background: none; border: none; cursor: pointer; padding: 0;"><img src="images/mess.png" alt="Messenger"></button>
+                <button class="contact-btn" data-contact="hotline" style="background: none; border: none; cursor: pointer; padding: 0; font-size: 22px;">📞</button>
+            </div>
+
+    <!-- ========== TOAST NOTIFICATION ========== -->
+    <div class="toast-container" id="toastContainer"></div>
+    
+    <!-- JavaScript -->
+    <script src="js/store.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/contact-widget.js"></script>
+<!-- <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop LaptopS - Thiết bị Công nghệ Chính hãng</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left"><span>📞 Hotline: 1800 6969 | ✉️ Email: cskh@laptops.vn</span></div>
+        <div class="top-bar-right">
+            <button onclick="openTrackingModal()">🔍 Tra cứu đơn hàng</button>
+            <a href="admin.html">Trang Quản Trị</a>
+        </div>
+    </div>
+
+    <div id="trackingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeTrackingModal()">&times;</span>
+            <h3 style="margin-bottom: 10px; color: var(--primary-color);">Kiểm tra đơn hàng</h3>
+            <p style="font-size: 13px; color: #666;">Nhập mã đơn hàng của bạn (VD: ORD1234)</p>
+            <input type="text" id="orderCodeInput" placeholder="Nhập mã đơn...">
+            <button onclick="checkOrderStatus()">Tra cứu</button>
+            <div id="tracking-result"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">Shop LaptopS</div>
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm laptop, linh kiện...">
+                    <button onclick="searchProducts()">Tìm</button>
+                </div>
+            </div>
+            <nav>
+                <button class="nav-btn" data-page="home">Trang chủ</button>
+                <div class="dropdown">
+                    <button class="nav-btn" data-page="products">
+                    Sản Phẩm <span style="font-size: 10px; margin-left: 3px;">▼</span>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="navToCategory('Văn Phòng')">Laptop Văn phòng</a>
+                    <a href="#" onclick="navToCategory('Gaming')">Laptop Gaming</a>
+                    <a href="#" onclick="navToCategory('Apple')">MacBook</a>
+                 </div>
+                </div>
+                <button class="nav-btn" data-page="favorites">Yêu Thích</button>
+                <button class="nav-btn" data-page="cart">Giỏ Hàng <span class="cart-badge" id="cart-count">0</span></button>
+                <button class="nav-btn" data-page="account">Tài Khoản</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <div class="hero">
+                <h1>Đỉnh cao công nghệ - Bứt phá giới hạn</h1>
+                <p>Khám phá bộ sưu tập laptop mới nhất 2026. Sinh viên Văn Hiến giảm thêm 5%.</p>
+            </div>
+            <h2>Sản phẩm nổi bật</h2>
+            <div id="featured-products" class="products-grid"></div>
+        </section>
+
+        <section id="products">
+            </div>
+            <div id="all-products" class="products-grid"></div>
+        </section>
+
+        <section id="favorites">
+            <h2>Sản phẩm yêu thích</h2>
+            <div id="no-favorites" style="display: none; text-align: center; margin-top: 50px; color: #666;">Bạn chưa có sản phẩm yêu thích nào.</div>
+            <div id="favorite-products" class="products-grid"></div>
+        </section>
+
+        <section id="cart">
+            <h2>Giỏ hàng của bạn</h2>
+            <div id="cart-empty" style="text-align: center; margin-top: 50px; color: #666;">
+                Giỏ hàng của bạn đang trống.<br><br>
+                <button class="checkout-btn" style="width: 200px;" onclick="document.querySelector('[data-page=products]').click()">Tiếp tục mua sắm</button>
+            </div>
+            <div id="cart-content" class="cart-container" style="display: none;">
+                <div id="cart-items-list" class="cart-items"></div>
+                <aside class="cart-summary">
+                    <h3>Thông tin đơn hàng</h3>
+                    <div class="summary-line"><span>Tổng sản phẩm:</span><span id="summary-qty">0</span></div>
+                    <div class="summary-line"><span>Tạm tính:</span><span id="summary-price">0₫</span></div>
+                    <div class="summary-line"><span>Phí vận chuyển:</span><span id="summary-shipping">0₫</span></div>
+                    <hr style="margin: 15px 0;">
+                    <div class="summary-line total"><span>Tổng cộng:</span><span id="summary-total">0₫</span></div>
+                    <button class="checkout-btn" onclick="checkout()">Thanh Toán Ngay</button>
+                </aside>
+            </div>
+        </section>
+
+        <section id="account">
+            <section id="auth">
+            <h2 style="text-align: center; display: block; border: none;">Xác thực tài khoản</h2>
+            <div class="auth-container">
+                <div class="auth-form" id="login-form-box">
+                    <h3 style="text-align:center; margin-bottom: 10px; color: var(--primary-color);">Đăng Nhập</h3>
+                    <p style="text-align:center; color:#666; margin-bottom: 25px; font-size: 14px;">Đăng nhập để theo dõi đơn hàng và thanh toán.</p>
+                    <form onsubmit="handleLogin(event)">
+                        <label>Tên đăng nhập:</label>
+                        <input type="text" id="login-username" required placeholder="Nhập tên đăng nhập (VD: khach)">
+                        <label>Mật khẩu:</label>
+                        <input type="password" id="login-password" required placeholder="Nhập mật khẩu (VD: 123)">
+                        <button type="submit" class="checkout-btn">Đăng Nhập</button>
+                        <p style="text-align:center; margin-top: 20px; font-size: 14px;">Chưa có tài khoản? <a href="#" onclick="toggleAuthForm('register')">Đăng ký ngay</a></p>
+                    </form>
+                </div>
+
+                <div class="auth-form" id="register-form-box" style="display: none;">
+                    <h3 style="text-align:center; margin-bottom: 10px; color: var(--success-color);">Đăng Ký Tài Khoản</h3>
+                    <p style="text-align:center; color:#666; margin-bottom: 25px; font-size: 14px;">Tạo tài khoản mới tại Shop LaptopS.</p>
+                    <form onsubmit="handleRegister(event)">
+                        <label>Họ và Tên:</label>
+                        <input type="text" id="reg-name" required placeholder="VD: PTV">
+                        <label>Tên đăng nhập:</label>
+                        <input type="text" id="reg-username" required placeholder="Viết liền không dấu">
+                        <label>Mật khẩu:</label>
+                        <input type="password" id="reg-password" required placeholder="Tối thiểu 6 ký tự" minlength="6">
+                        <button type="submit" class="checkout-btn" style="background: var(--success-color);">Tạo Tài Khoản</button>
+                        <p style="text-align:center; margin-top: 20px; font-size: 14px;">Đã có tài khoản? <a href="#" onclick="toggleAuthForm('login')">Đăng nhập</a></p>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+            <h2 style="text-align: center; display: block; border: none;">Tài khoản của tôi</h2>
+            <div class="account-layout">
+                <div class="account-card">
+                    <h3>Hồ sơ cá nhân</h3>
+                    <form id="account-form" onsubmit="saveAccount(event)">
+                        <label style="font-weight: 600; display: block; margin-bottom: 5px;">Họ và Tên:</label>
+                        <input type="text" id="acc-name" value="PTV" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;">
+                        <label style="font-weight: 600; display: block; margin-bottom: 5px;">Số điện thoại:</label>
+                        <input type="tel" id="acc-phone" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;">
+                        <label style="font-weight: 600; display: block; margin-bottom: 5px;">Địa chỉ giao hàng:</label>
+                        <textarea id="acc-address" rows="3" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;"></textarea>
+                        <button type="submit" class="checkout-btn">Cập nhật thông tin</button>
+                    </form>
+                </div>
+                <div class="account-card">
+                    <h3>Đơn hàng đã đặt</h3>
+                    <div style="overflow-x: auto;">
+                        <table class="data-table">
+                            <thead><tr><th>Mã Đơn</th><th>Ngày Đặt</th><th>Tổng Tiền</th><th>Trạng Thái</th></tr></thead>
+                            <tbody id="user-order-list"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Shop LaptopS</h4>
+                <p>Hệ thống bán lẻ thiết bị công nghệ hàng đầu, cam kết chính hãng 100%.</p>
+                <p>📍 Địa chỉ: Trường Đại học Văn Hiến, TP.HCM</p>
+                <p>📞 Hotline: 1800 6969</p>
+            </div>
+            <div class="footer-col">
+                <h4>Chính sách</h4>
+                <ul>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Chính sách đổi trả 1-1</a></li>
+                    <li><a href="#">Bảo mật thông tin</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Đăng ký nhận tin</h4>
+                <p>Nhận ngay mã giảm giá 5% cho đơn hàng đầu tiên.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Đăng ký thành công!');">
+                    <input type="email" placeholder="Nhập email của bạn..." required>
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Shop LaptopS. Đồ án Lập trình web thực hiện bởi Nhóm CR7.</p>
+        </div>
+    </footer>
+
+    <div id="toast-container"></div>
+    <script src="js/script.js"></script>
+</body>
+</html> -->
